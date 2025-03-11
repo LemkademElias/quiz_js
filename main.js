@@ -28,4 +28,8 @@ const bonnesReponses = [
     "10",
     "liverpool"
   ];
-  
+ 
+// Boucle pour poser les 10 questions
+for (let i = 0; i < questions.length; i++) {
+    question = questions[i];
+    reponse = prompt((i + 1) + ". " + question);  
