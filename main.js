@@ -29,10 +29,9 @@ const bonnesReponses = [
     "liverpool"
   ];
 
-// Boucle pour poser les 10 questions
-for (let i = 0; i < questions.length; i++) {
+for (let i = 0; i < questions.length; i++) { // Boucle qui parcourt chaque question du quiz
     question = questions[i];
-    reponse = prompt((i + 1) + ". " + question);
+    reponse = prompt((i + 1) + ". " + question);   // Pose la question à l'utilisateur et récupère sa réponse
   
     // Vérification de la réponse 
     if (reponse !== null && reponse.toLowerCase() === bonnesReponses[i]) {
