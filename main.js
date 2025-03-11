@@ -34,7 +34,7 @@ for (let i = 0; i < questions.length; i++) {
     question = questions[i];
     reponse = prompt((i + 1) + ". " + question);
   
-    // Vérification de la réponse (on compare en minuscules)
+    // Vérification de la réponse 
     if (reponse !== null && reponse.toLowerCase() === bonnesReponses[i]) {
       console.log("Bonne réponse !");
       score++;
@@ -42,3 +42,7 @@ for (let i = 0; i < questions.length; i++) {
       console.log("Mauvaise réponse !");
     }
   }
+
+// Fin du quiz
+alert("Fin du quiz ! Tu as " + score + " bonnes réponses sur " + questions.length + " !");
+console.log("Fin du quiz ! Tu as " + score + " bonnes réponses sur " + questions.length + " !");
