@@ -30,7 +30,7 @@ const bonnesReponses = [
   ];
 
 for (let i = 0; i < questions.length; i++) { // Boucle qui parcourt chaque question du quiz
-    question = questions[i];
+    question = questions[i];   // Récupère la question actuelle
     reponse = prompt((i + 1) + ". " + question);   // Pose la question à l'utilisateur et récupère sa réponse
   
     // Vérification de la réponse 
