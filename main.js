@@ -15,4 +15,17 @@ const questions = [
     "Quel club est surnommé 'Les Reds' ?"
   ];
 
+// Tableau des réponses correctes (en minuscules pour la vérif)
+const bonnesReponses = [
+    "lionel messi",
+    "france",
+    "cr7",
+    "inter miami",
+    "bresil",
+    "lionel messi",
+    "11",
+    "santiago bernabeu",
+    "10",
+    "liverpool"
+  ];
   
