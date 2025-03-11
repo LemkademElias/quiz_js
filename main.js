@@ -28,8 +28,17 @@ const bonnesReponses = [
     "10",
     "liverpool"
   ];
- 
+
 // Boucle pour poser les 10 questions
 for (let i = 0; i < questions.length; i++) {
     question = questions[i];
-    reponse = prompt((i + 1) + ". " + question);  
+    reponse = prompt((i + 1) + ". " + question);
+  
+    // Vérification de la réponse (on compare en minuscules)
+    if (reponse !== null && reponse.toLowerCase() === bonnesReponses[i]) {
+      console.log("Bonne réponse !");
+      score++;
+    } else {
+      console.log("Mauvaise réponse !");
+    }
+  }
