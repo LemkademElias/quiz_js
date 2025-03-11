@@ -52,3 +52,14 @@ main {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
+
+.quiz-intro h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.quiz-intro p {
+    font-size: 1.2rem;
+    color: #666;
+}
