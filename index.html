@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Quiz Football</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>JS Mini Quiz</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Mini Quiz Football</h1>
-    </header>
+  <header>
+    <h1>Bienvenue dans le Mini Quiz JavaScript !</h1>
+  </header>
 
-    <main>
-        <section class="quiz-intro">
-            <h2>Prêt à jouer ?</h2>
-            <p>Ouvre la console et tape <strong>startQuiz()</strong> pour commencer !</p>
-        </section>
-    </main>
+  <main>
+    <!-- Formulaire pour entrer le nom -->
+    <section id="start-screen">
+      <label for="player-name">Entre ton nom :</label>
+      <input type="text" id="player-name" placeholder="Ton prénom">
+      <button id="start-btn">Commencer le quiz</button>
+    </section>
 
-    <footer>
-        <p>© 2025 JS-Mini-Quizz by Elias Lemkadem</p>
-    </footer>
 
-    <script src="main.js"></script>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Mon Quiz JS</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
