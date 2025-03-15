@@ -25,3 +25,21 @@ function startQuiz() {
   showQuestion();
 }
 
+// Affiche la question actuelle
+function showQuestion() {
+  const q = questions[currentQuestion];
+  document.getElementById('question').textContent = q.question;
+
+  const choicesDiv = document.getElementById('choices');
+  choicesDiv.innerHTML = "";
+
+  q.choices.forEach(choice => {
+    const btn = document.createElement('button');
+    btn.textContent = choice;
+    btn.onclick = () => checkAnswer(choice);
+    choicesDiv.appendChild(btn);
+  });
+
+  document.getElementById('feedback').textContent = "";
+}
+
