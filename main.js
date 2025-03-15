@@ -75,3 +75,17 @@ function showResult() {
     `${playerName}, tu as eu ${score} sur ${questions.length} !`;
 }
 
+// Bonus : message final selon le score
+function showFinalMessage() {
+  let message = "";
+
+  if (score === questions.length) {
+    message = "Bravo " + playerName + " ! Score parfait ! 🎉";
+  } else if (score >= questions.length / 2) {
+    message = "Bien joué " + playerName + " ! Tu t'en sors bien 👍";
+  } else {
+    message = "Dommage " + playerName + " ! Tu feras mieux la prochaine fois 😢";
+  }
+
+  alert(message);
+}
