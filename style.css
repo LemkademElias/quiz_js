@@ -18,3 +18,11 @@ header {
   padding: 1rem;
 }
 
+main {
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
