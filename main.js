@@ -43,3 +43,27 @@ function showQuestion() {
   document.getElementById('feedback').textContent = "";
 }
 
+// Vérifie la réponse choisie
+function checkAnswer(choice) {
+  const feedback = document.getElementById('feedback');
+
+  if (choice === questions[currentQuestion].answer) {
+    feedback.textContent = "Bonne réponse !";
+    feedback.className = "correct";
+    score++;
+    document.getElementById('score').textContent = score;
+  } else {
+    feedback.textContent = "Mauvaise réponse !";
+    feedback.className = "incorrect";
+  }
+
+  currentQuestion++;
+
+  if (currentQuestion < questions.length) {
+    setTimeout(showQuestion, 1000); // attend une seconde avant la prochaine question
+  } else {
+    setTimeout(showResult, 1000);
+  }
+}
+
+
