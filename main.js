@@ -66,4 +66,12 @@ function checkAnswer(choice) {
   }
 }
 
+// Affiche l'écran de résultat
+function showResult() {
+  document.getElementById('quiz').style.display = "none";
+  document.getElementById('result').style.display = "block";
+
+  document.getElementById('finalScore').textContent =
+    `${playerName}, tu as eu ${score} sur ${questions.length} !`;
+}
 
