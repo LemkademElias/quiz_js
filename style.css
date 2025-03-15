@@ -26,3 +26,13 @@ main {
   display: none;
 }
 
+#start-screen, #quiz-container, #result-screen {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+
